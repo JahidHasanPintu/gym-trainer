@@ -12,12 +12,12 @@ const Header = () => {
                         <img className='img-fluid logo-img' src={logo} alt="" />
                     </div>
                     <div className="nav-links">
-                    <Link to="/home">HOME</Link>
+                    <Link to="/Home">HOME</Link>
                     
-                    <Link to="/Reviews">BLOGS</Link>
-                    <Link to="/Dashboard">Checkout</Link>
-                    <Link to="/Blogs">ABOUT</Link>
-                    <Link to="/About">Login</Link>
+                    <Link to="/Blogs">BLOGS</Link>                    
+                    <Link to="/About">ABOUT</Link>
+                    <Link to="/Checkout">Checkout</Link>
+                    
                     </div>
                 </div>
             </nav>
