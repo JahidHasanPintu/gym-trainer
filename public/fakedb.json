@@ -42,27 +42,5 @@
       "review": "This looks to be a good laptop at a good price, but be aware that it does not have a UK keyboard. This means you can't type certain characters, including the pound sign £, and other characters are not where you expect them - for example the @ sign is shift-2 instead of being to the right of L.",
       "rating": "4",
       "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-    },
-    {
-      "id": 7,
-      "name": "Kurtis Weissnat",
-      "review": "I just bought this laptop and when opening the box, there is no plug or cable with this laptop. I always plug mine in as the battery does not last as long as I need it to.This has stopped me from using it in case it stops while I am using it.I am waiting for information from the seller. Will update",
-      "rating": "4.5",
-      "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-    },
-    {
-      "id": 8,
-      "name": "Nicholas",
-      "review": "There now seems to be a problem with the keyboard, the number 2 key will not change to a @ which means I cannot type in any email addresses. This means most programs I use require an email address I can't use right now. I have spoken to a few pc experts who gave me advice to update drivers deinstall - reinstall, which all worked. But didn't fix the problem. ",
-      "rating": "3",
-      "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-    },
-    {
-      "id": 9,
-      "name": "Kate Elezabeth",
-      "review": "I could sit here and write all about the specs on this computer, but they are already in the description, and If you are like me... you don't really understand it anyways.So I am going to tell you what I LOVE about this computer and what I use it for. I am a full time college student as well as a single mother.",
-      "rating": "5",
-      "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-      
     }
   ]

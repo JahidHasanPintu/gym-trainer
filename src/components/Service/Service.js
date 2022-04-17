@@ -6,13 +6,16 @@ const Service = (props) => {
     
     return (
 
-        <div className='service'>
+        <div className='service col-sm-12 col-md-4'>
            
             
             <img src={img} alt="" />
             <h3>{name}</h3>
             <h4>Rating: {rating}</h4>
             <p>{review}</p>
+            <div className="bg-buy-plan">
+                <span className="title4">Buy Plan</span>
+            </div>
         </div>
     );
 };
