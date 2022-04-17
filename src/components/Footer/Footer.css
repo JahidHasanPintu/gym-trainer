@@ -1,0 +1,36 @@
+.footer {
+  background-color: #282f3d;
+  height: 150px;
+}
+
+.btm-footer {
+  top: 1px;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    width: 1183px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-container {
+    width: 750px;
+  }
+}
+.footer-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
+}
+.footer-container p {
+  color: white;
+}
