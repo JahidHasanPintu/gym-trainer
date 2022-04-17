@@ -1,8 +1,10 @@
-.container {
-  margin-top: 20px;
+.container-head {
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   justify-content: space-between;
-  /* background-color: rgb(12, 12, 12); */
+  background-color: #282f3d4b;
   align-items: center;
   /* position: absolute; */
 }
@@ -14,4 +16,7 @@ a {
   padding-left: 20px;
   color: white;
   font-weight: bold;
+}
+a:hover {
+  color: black;
 }
