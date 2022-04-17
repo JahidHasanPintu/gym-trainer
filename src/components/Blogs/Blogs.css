@@ -1,0 +1,13 @@
+.blog-area {
+  margin: 30px;
+}
+.blog-area img {
+  width: 100%;
+}
+.blog-area h2 {
+  color: yellowgreen;
+  font-weight: bold;
+}
+.common-des {
+  padding: 30px;
+}
