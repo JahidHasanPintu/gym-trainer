@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "review": "I could sit here and write all about the specs on this computer, but they are already in the description, and If you are like me... you don't really understand it anyways.So I am going to tell you what I LOVE about this computer and what I use it for. I am a full time college student as well as a single mother.",
+      "rating": "5",
+      "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+      
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "review": "This is the best laptop deal you can get, full stop.Touchescreen? Nope. That feature is stupid in a laptop, in my view. As you use the keyboard, incidental touche s of the screen change focus or move to different screens--touchscreen is a gimmick and sucks.",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=466&q=80"
+      
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "review": "A very reasonably priced laptop for basic computing needs. The specs that stick out to me for describing this as basic needs is 4GB of RAM, and 128GB M.2 SSD. Both are at the bare minimum in today's needs. Cell phones now come with those specs( high dollar ones though..).",
+      "rating": "4",
+      "img": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "review": "The screen on this laptop is worth the price by itself. Gorgeous, black is actually black, it rivals my AOC gaming desktop monitor.They have told me to get it replaced. I am waiting on the company to get back to me. Very disappointed but was pleasantly surprised on how clear the audio is.",
+      "rating": "3",
+      "img": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "review": "2 things that stuck out to me when I started using: screen and sound quality. The screen is very sharp and high contrast. Black is actually black. Very impressed. I was also surprised by the audio quality. I don't expect much from laptop speakers, especially low priced ones.",
+      "rating": "5",
+      "img": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=495&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Dennis Schulist",
+      "review": "This looks to be a good laptop at a good price, but be aware that it does not have a UK keyboard. This means you can't type certain characters, including the pound sign £, and other characters are not where you expect them - for example the @ sign is shift-2 instead of being to the right of L.",
+      "rating": "4",
+      "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "review": "I just bought this laptop and when opening the box, there is no plug or cable with this laptop. I always plug mine in as the battery does not last as long as I need it to.This has stopped me from using it in case it stops while I am using it.I am waiting for information from the seller. Will update",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Nicholas",
+      "review": "There now seems to be a problem with the keyboard, the number 2 key will not change to a @ which means I cannot type in any email addresses. This means most programs I use require an email address I can't use right now. I have spoken to a few pc experts who gave me advice to update drivers deinstall - reinstall, which all worked. But didn't fix the problem. ",
+      "rating": "3",
+      "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 9,
+      "name": "Kate Elezabeth",
+      "review": "I could sit here and write all about the specs on this computer, but they are already in the description, and If you are like me... you don't really understand it anyways.So I am going to tell you what I LOVE about this computer and what I use it for. I am a full time college student as well as a single mother.",
+      "rating": "5",
+      "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+      
+    }
+  ]
