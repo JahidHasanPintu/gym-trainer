@@ -1,0 +1,38 @@
+/* footer {
+  background: #fff;
+  clear: both;
+  margin-top: 7%;
+}
+.border-top {
+  border-top: 1px solid #e8e8e8;
+}
+.btm-footer {
+  top: 1px;
+}
+
+.btm-footer,
+.scrollTop:hover i {
+  position: absolute;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1183px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
