@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { getAuth } from "firebase/auth";
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
@@ -13,7 +14,12 @@ import Checkout from './components/Checkout/Checkout';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 
+
+const auth = getAuth(App);
+
+
 function App() {
+  
   return (
     <div >
       

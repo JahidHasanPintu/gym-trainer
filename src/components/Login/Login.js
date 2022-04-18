@@ -25,13 +25,14 @@ const Login = () => {
         <div className='form-area'>
             <form onSubmit={handleSubmit} className='login-form'>
                 {/* <!-- Email input --> */}
+                <h2 className='text-center'>Login</h2>
                 <div class="form-outline mb-4">
-                    <input ref={emailRef} type="email" placeholder='Email address' id="form2Example1" class="form-control" required/>
+                    <input ref={emailRef} type="email" placeholder='Email address' class="form-control" required/>
                 </div>
 
                 
                 <div class="form-outline mb-4">
-                    <input ref={passwordRef} type="password" placeholder="Password" id="form2Example2" class="form-control" required/>
+                    <input ref={passwordRef} type="password" placeholder="Password" class="form-control" required/>
                     
                 </div>
                 
@@ -41,8 +42,8 @@ const Login = () => {
                     <div class="col d-flex justify-content-center">
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="form2Example31"/>
-                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                        <input class="form-check-input" type="checkbox" value="" />
+                        <label class="form-check-label" > Remember me </label>
                     </div>
                     </div>
 
@@ -53,7 +54,7 @@ const Login = () => {
                 </div>
 
                 
-                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-block mb-4">Log in</button>
 
                 
                 <div class="text-center">
