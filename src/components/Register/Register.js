@@ -95,14 +95,14 @@ const Register = () => {
                     
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" />
-                        <label class="form-check-label" > Agree with Policy </label>
+                        <label class="form-check-label" > Agree with our Term's and condition. </label>
                     </div>
                     </div>
 
-                    <div class="col">
+                    {/* <div class="col">
                     
                     <a href="#!">Forgot password?</a>
-                    </div>
+                    </div> */}
                 </div>
 
                 
