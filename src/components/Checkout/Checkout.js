@@ -33,7 +33,7 @@ const Checkout = () => {
                             
                                 <div className="col-md-6">
                                     <div className="md-form mb-0">
-                                        <input type="text" id="email" name="email" className="form-control"/>
+                                        <input type="text" id="email" name="email" className="form-control" required/>
                                         <label for="email" className="">Your email</label>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ const Checkout = () => {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" className="form-control"/>
+                                        <input type="text" id="subject" name="subject" className="form-control" required/>
                                         <label for="subject" className="">Phone Number</label>
                                     </div>
                                 </div>

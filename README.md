@@ -1,8 +1,8 @@
 # Pintu- Personal Fitness trainer
 
 A Gym trainer website. From where customers can take services like guidelines about fitness and good health.
-Live site Link:  
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site Link: https://gymtrainerwebsite.web.app/
+or [Click to visit Pintu- Personal Fitness trainer](https://gymtrainerwebsite.web.app/).
 
 ## To complete this whole project I used
 
