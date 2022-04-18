@@ -32,3 +32,12 @@ a:hover {
 .logut-btn:hover {
   color: black;
 }
+
+.header li:hover {
+  border-bottom: 1px solid #70aed2;
+  transition: all 150ms ease-in;
+}
+
+.header {
+  background-color: #282f3d4b;
+}

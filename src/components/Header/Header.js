@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -17,25 +21,41 @@ const Header = () => {
 
     return (
         <div>
-            <nav className='fluid'>
-                <div className="container-head fixed-top">
-                    <div className="logo">
-                        <img className='img-fluid logo-img' src={logo} alt="" />
-                    </div>
-                    <div className="nav-links">
-                    <Link to="/Home">HOME</Link>
+            <nav className="navbar navbar-expand-lg navbar-light header fixed-top">
+                <div className="container ">
                     
-                    <Link to="/Blogs">BLOGS</Link>                    
-                    <Link to="/About">ABOUT</Link>
-                    <Link to="/Checkout">CHECKOUT</Link>
-                    {
-                        user ?
-                        <button className='logut-btn' onClick={handleSignOut}>Log out</button>
-                        :
-                        <Link to="/Login">LOGIN</Link>
-                    }
+                        
+                    <Link className="navbar-brand " to="/"><img className='img-fluid logo-img' src={logo} alt="" /></Link>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img src="icons/menu-2 1.svg" alt="" /></span>
+                        <FontAwesomeIcon className='text-white' icon={faBars}></FontAwesomeIcon>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ms-auto">
+                            <li className="nav-item">
+                                <Link className="nav-link active fw-bold text-white" aria-current="page" to="/home">HOME</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link active fw-bold text-white" aria-current="page" to="/Blogs">BLOGS</Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link active fw-bold text-white"
+                                    to="/About">ABOUT</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link active fw-bold text-white"
+                                    to="/Checkout">CHECKOUT</Link>
+                            </li>
                     
-                    
+                            <li className="nav-item">
+                                {
+                                    user ?
+                                    <button className='logut-btn' onClick={handleSignOut}>Log out</button>
+                                        :
+                                        <Link className="nav-link active fw-bold text-white" to="/Login">LOGIN</Link>}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
