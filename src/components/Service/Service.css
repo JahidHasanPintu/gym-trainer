@@ -18,3 +18,15 @@
   font-weight: bold;
   cursor: pointer;
 }
+.service h6,
+h3 {
+  font-weight: bold;
+  color: #282f3d;
+}
+.service h3 {
+  margin-top: 5px;
+}
+
+.service h6 {
+  color: red;
+}
