@@ -1,9 +1,20 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 import logo from '../../images/light-logo.png'
 import './Header.css'
 
 const Header = () => {
+
+    // Sign out process 
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () =>{
+        signOut(auth);
+    }
+
     return (
         <div>
             <nav className='fluid'>
@@ -17,7 +28,13 @@ const Header = () => {
                     <Link to="/Blogs">BLOGS</Link>                    
                     <Link to="/About">ABOUT</Link>
                     <Link to="/Checkout">CHECKOUT</Link>
-                    <Link to="/Login">LOGIN</Link>
+                    {
+                        user ?
+                        <button className='logut-btn' onClick={handleSignOut}>Log out</button>
+                        :
+                        <Link to="/Login">LOGIN</Link>
+                    }
+                    
                     
                     </div>
                 </div>

@@ -20,3 +20,15 @@ a {
 a:hover {
   color: black;
 }
+.logut-btn {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.logut-btn:hover {
+  color: black;
+}

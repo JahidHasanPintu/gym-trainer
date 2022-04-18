@@ -6,6 +6,9 @@ import './Login.css'
 
 const Login = () => {
     const navigate= useNavigate();
+     // using useref hook 
+     const emailRef = useRef('');
+     const passwordRef = useRef('');
 
     const [
         signInWithEmailAndPassword,
@@ -13,10 +16,8 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-    // using useref hook 
-    const emailRef = useRef('');
-    const passwordRef = useRef('');
-
+   
+    //   Redirection to home page 
     if(user){
         navigate('/home');
     }
@@ -25,7 +26,6 @@ const Login = () => {
         event.preventDefault();
         const email= emailRef.current.value;
         const password= passwordRef.current.value;
-        console.log(email,password);
         signInWithEmailAndPassword(email,password);
     }
 

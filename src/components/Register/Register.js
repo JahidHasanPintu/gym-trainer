@@ -7,17 +7,19 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 const Register = () => {
+     // using useref hook 
+     const emailRef = useRef('');
+     const passwordRef = useRef('');
+     const nameRef = useRef('');
 
+    //  User creation 
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
       ] = useCreateUserWithEmailAndPassword(auth);
-     // using useref hook 
-     const emailRef = useRef('');
-     const passwordRef = useRef('');
-     const nameRef = useRef('');
+    
  
 
      
@@ -36,6 +38,11 @@ const Register = () => {
      const navigateLogin =event =>{
          navigate('/login');
      }
+
+     //   Redirection to home page 
+    if(user){
+        navigate('/home');
+    }
  
     return (
         <div className='form-area'>
