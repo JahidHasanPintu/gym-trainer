@@ -2,21 +2,33 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
+// import auth from '../../firebase.init';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const Register = () => {
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useCreateUserWithEmailAndPassword(auth);
      // using useref hook 
      const emailRef = useRef('');
      const passwordRef = useRef('');
      const nameRef = useRef('');
  
+
+     
      // event handler 
      const handleRegister = event =>{
          event.preventDefault();
          const email= emailRef.current.value;
          const password= passwordRef.current.value;
          const name= nameRef.current.value;
-         console.log(name);
          console.log(email,password);
+         createUserWithEmailAndPassword(email, password);
      }
  
      // Register form navigator 

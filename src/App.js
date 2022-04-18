@@ -1,6 +1,6 @@
 
 import './App.css';
-import { getAuth } from "firebase/auth";
+
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
@@ -13,9 +13,10 @@ import NotFound from './components/NotFound/NotFound';
 import Checkout from './components/Checkout/Checkout';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+// import app from './firebase.init';
 
 
-const auth = getAuth(App);
+
 
 
 function App() {
