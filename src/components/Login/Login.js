@@ -18,7 +18,7 @@ const Login = () => {
      const location = useLocation();
      let errorElement;
 
-    
+    // Tracking path 
       let from = location.state?.from?.pathname || "/";
       const [
           signInWithEmailAndPassword,
@@ -71,28 +71,28 @@ const Login = () => {
             <form onSubmit={handleSubmit} className='login-form'>
                 {/* <!-- Email input --> */}
                 <h2 className='text-center'>Login</h2>
-                <div class="form-outline mb-4">
-                    <input ref={emailRef} type="email" placeholder='Email address' class="form-control" required/>
+                <div className="form-outline mb-4">
+                    <input ref={emailRef} type="email" placeholder='Email address' className="form-control" required/>
                 </div>
 
                 
-                <div class="form-outline mb-4">
-                    <input ref={passwordRef} type="password" placeholder="Password" class="form-control" required/>
+                <div className="form-outline mb-4">
+                    <input ref={passwordRef} type="password" placeholder="Password" className="form-control" required/>
                     
                 </div>
                 
 
                 
-                <div class="row mb-4">
-                    <div class="col d-flex justify-content-center">
+                <div className="row mb-4">
+                    <div className="col d-flex justify-content-center">
                     
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" />
-                        <label class="form-check-label" > Remember me </label>
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" />
+                        <label className="form-check-label" > Remember me </label>
                     </div>
                     </div>
 
-                    <div class="col">
+                    <div className="col">
                     
                     <b onClick={resetPassword} className='reg-button'>Forgot password?</b>
                     </div>
@@ -100,16 +100,16 @@ const Login = () => {
                 </div>
 
                 
-                <button type="submit" class="btn btn-primary btn-block mb-4">Log in</button>
+                <button type="submit" className="btn btn-primary btn-block mb-4">Log in</button>
 
                 
-                <div class="text-center">
+                <div className="text-center">
                     <p>Not a member? <b onClick={ navigateRegister} className='reg-button'>Please Register</b></p>
                     <p>or sign up with:</p>
                    
 
-                    <button onClick={() => signInWithGoogle()} type="button" class="btn btn-primary btn-block mb-4">
-                    <i class="fab fa-google"></i>    sign in with google  
+                    <button onClick={() => signInWithGoogle()} type="button" className="btn btn-primary btn-block mb-4">
+                    <i className="fab fa-google"></i>    sign in with google  
                     </button>
                     <ToastContainer />
 
