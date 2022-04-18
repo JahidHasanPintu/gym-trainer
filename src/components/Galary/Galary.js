@@ -9,7 +9,10 @@ import img6 from '../../images/img98-3.jpg';
 
 const Galary = () => {
     return (
-        <div className='img-galary d-flex justify-content-center'>
+        <div>
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Results</h2>
+            <div className='img-galary d-flex justify-content-center'>
+            
             {/* <!-- Gallery --> */}
            
             <div class="row">
@@ -57,6 +60,7 @@ const Galary = () => {
             </div>
             {/* <!-- Gallery --> */}
                     </div>
+        </div>
     );
 };
 

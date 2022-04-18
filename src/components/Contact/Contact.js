@@ -1,8 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import './Contact.css'
 
-const Checkout = () => {
-    const {serviceID} =useParams();
+const Contact = () => {
     return (
         <div className='contact-area'> 
             
@@ -10,9 +9,10 @@ const Checkout = () => {
 <section class="mb-4">
 
     {/* <!--Section heading--> */}
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Checkout</h2>
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     {/* <!--Section description--> */}
-    <p class="text-center w-responsive mx-auto mb-5">Fill up the forms Please.</p>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
 
     <div class="row">
 
@@ -49,15 +49,7 @@ const Checkout = () => {
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <input type="text" id="subject" name="subject" class="form-control"/>
-                            <label for="subject" class="">Address</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control"/>
-                            <label for="subject" class="">Phone Number</label>
+                            <label for="subject" class="">Subject</label>
                         </div>
                     </div>
                 </div>
@@ -71,7 +63,7 @@ const Checkout = () => {
 
                         <div class="md-form">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Additional Information</label>
+                            <label for="message">Your message</label>
                         </div>
 
                     </div>
@@ -81,14 +73,28 @@ const Checkout = () => {
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Complete Order</a>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
         </div>
         {/* <!--Grid column-->
 
         <!--Grid column--> */}
-        
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>San Francisco, CA 94126, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@mdbootstrap.com</p>
+                </li>
+            </ul>
+        </div>
         {/* <!--Grid column--> */}
 
     </div>
@@ -100,4 +106,4 @@ const Checkout = () => {
     );
 };
 
-export default Checkout;
+export default Contact;
