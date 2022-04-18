@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className='contact-area'> 
             
-            {/* <!--Section: Contact v.2--> */}
+            
 <section class="mb-4">
 
     {/* <!--Section heading--> */}
@@ -30,9 +30,7 @@ const Contact = () => {
                             <label for="name" class="">Your name</label>
                         </div>
                     </div>
-                    {/* <!--Grid column-->
-
-                    <!--Grid column--> */}
+                    
                     <div class="col-md-6">
                         <div class="md-form mb-0">
                             <input type="text" id="email" name="email" class="form-control"/>
@@ -42,9 +40,7 @@ const Contact = () => {
                     {/* <!--Grid column--> */}
 
                 </div>
-                {/* <!--Grid row-->
-
-                <!--Grid row--> */}
+               
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
@@ -53,9 +49,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                {/* <!--Grid row--> */}
-
-                {/* <!--Grid row--> */}
+                
                 <div class="row">
 
                     {/* <!--Grid column--> */}
@@ -68,22 +62,20 @@ const Contact = () => {
 
                     </div>
                 </div>
-                {/* <!--Grid row--> */}
+               
 
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-primary" >Send</a>
             </div>
             <div class="status"></div>
         </div>
-        {/* <!--Grid column-->
-
-        <!--Grid column--> */}
+       
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
+                    <p>Keraniganj, Dhaka, BD</p>
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -91,11 +83,11 @@ const Contact = () => {
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
+                    <p>jahidhasanpintu82@gmail.com</p>
                 </li>
             </ul>
         </div>
-        {/* <!--Grid column--> */}
+        
 
     </div>
 
