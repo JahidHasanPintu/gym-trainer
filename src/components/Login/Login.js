@@ -1,26 +1,38 @@
 import React, { useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useLocation,useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 
 const Login = () => {
+
+    const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
     const navigate= useNavigate();
      // using useref hook 
      const emailRef = useRef('');
      const passwordRef = useRef('');
+     const location = useLocation();
+     let errorElement;
 
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
+    
+      let from = location.state?.from?.pathname || "/";
+      const [
+          signInWithEmailAndPassword,
+          user1,
+          loading,
+          error1,
       ] = useSignInWithEmailAndPassword(auth);
-   
-    //   Redirection to home page 
-    if(user){
-        navigate('/home');
-    }
+      if (user1) {
+          navigate(from, { replace: true });
+      }
+      if (user) {
+          navigate(from, { replace: true });
+      }
+      if (error1) {
+          errorElement = <div>
+              <p className='text-danger'> {error1?.message} </p>
+          </div>
+      }
     // event handler 
     const handleSubmit = event =>{
         event.preventDefault();
@@ -76,7 +88,7 @@ const Login = () => {
                     <p>or sign up with:</p>
                    
 
-                    <button type="button" class="btn btn-primary btn-block mb-4">
+                    <button onClick={() => signInWithGoogle()} type="button" class="btn btn-primary btn-block mb-4">
                     <i class="fab fa-google"></i>    sign in with google  
                     </button>
 

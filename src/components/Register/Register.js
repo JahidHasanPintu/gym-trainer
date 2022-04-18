@@ -1,40 +1,63 @@
 
-import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Register.css';
 // import auth from '../../firebase.init';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 const Register = () => {
-     // using useref hook 
-     const emailRef = useRef('');
-     const passwordRef = useRef('');
-     const nameRef = useRef('');
 
-    //  User creation 
+    const [signInWithGoogle, user1, error2] = useSignInWithGoogle(auth);
+    const [error1, setError1] = useState('');
+    const nameRef = useRef('');
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+    
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    if (user) {
+        navigate(from, { replace: true });
+    }
+    if (user1) {
+        navigate(from, { replace: true });
+    }
+
+
+
+
+    
+    
+
+    
     
  
 
      
      // event handler 
-     const handleRegister = event =>{
-         event.preventDefault();
-         const email= emailRef.current.value;
-         const password= passwordRef.current.value;
-         const name= nameRef.current.value;
-         console.log(email,password);
-         createUserWithEmailAndPassword(email, password);
-     }
+    //  const handleRegister = event =>{
+    //      event.preventDefault();
+    //      const email= emailRef.current.value;
+    //      const password= passwordRef.current.value;
+    //      const name= nameRef.current.value;
+    //      console.log(email,password);
+    //      createUserWithEmailAndPassword(email, password);
+    //  }
  
-     // Register form navigator 
-     const navigate= useNavigate();
+    const handleRegister = event => {
+        event.preventDefault();
+        const name = nameRef.current.value;
+        const email = emailRef.current.value;
+        const password= passwordRef.current.value;      
+        createUserWithEmailAndPassword(email, password);
+    }
+   
      const navigateLogin =event =>{
          navigate('/login');
      }
@@ -91,7 +114,7 @@ const Register = () => {
                     <p>or sign up with:</p>
                    
 
-                    <button type="button" class="btn btn-primary btn-block mb-4">
+                    <button onClick={() => signInWithGoogle()} type="button" class="btn btn-primary btn-block mb-4">
                     <i class="fab fa-google"></i>    sign in with google  
                     </button>
 
