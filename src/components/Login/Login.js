@@ -34,9 +34,9 @@ const Login = () => {
       if (user) {
           navigate(from, { replace: true });
       }
-      if (error1) {
+      if (error1|| error) {
           errorElement = <div>
-              <p className='text-danger'> {error1?.message} </p>
+              <p className='text-danger'>Error: {error1?.message} {error?.message} </p>
           </div>
       }
     // event handler 
@@ -96,6 +96,7 @@ const Login = () => {
                     
                     <b onClick={resetPassword} className='reg-button'>Forgot password?</b>
                     </div>
+                    {errorElement}
                 </div>
 
                 
